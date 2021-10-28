@@ -1,30 +1,30 @@
 
 body{
-    color: #39a6b2;
+    color: #0b272b;
      font-family: "Lucida Console", "Courier New", monospace;
 } 
  h1{
     font-weight: bold;
     font-size: 36px;
-    color: #fce138;
+    color: #f8d404;
     margin: 0;
 } 
 nav {
   float: right;
   margin: 0 30px;
 }
-nav ul li {
+header nav ul li {
   display: inline;
 }
-nav ul li a {
+ header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
   font-size: 22px;
 }
-h1 {
+header h1 {
   font-weight: bold;
   font-size: 36px;
-  color: #fce138;
+  color:#fce138;
   margin: 0;
   display: inline;
 }
@@ -32,29 +32,83 @@ h1 {
   margin: 0;
   padding: 0;
 }
-a{
+header a{
   text-decoration: none;
-    color: #fce138;
+    color: #053b53;
 }
- h2 {
-    padding: 20px 35px;
-    background-color: #57777a;
+ /* apply styles to <header> */
+header {
+  padding: 20px 35px;
+  background-color: #39a6b2;
 }
-  h3{
-    padding: 20px;
-  }
- 
-   h4{
-    padding: 20px 35px;
-  }
- 
-   h5{
-    padding: 10px 15px 20px 25px;
-  }
+header {
+  padding: 20px;
+}
 
-   h5{
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 20px;
-    padding-left: 25px;
-  } 
+/* Applies 20px to the top and bottom, then 35px to the left and right */
+header {
+  padding: 20px 35px;
+}
+
+/* Applies 10px to the top, 15px to the right, 20px to the bottom, 25px to the left (in that specific clockwise order) */
+header {
+  padding: 10px 15px 20px 25px;
+}
+
+/* Explicitly list the side it should be applied to*/
+header {
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+}
+header nav {
+  float: right;
+  margin: 7px 0;
+}
+  footer{
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+  }
+  h2 {
+    color: #a03b3b;
+    font-size: 30px;
+    margin: 2;
+  }
+ /*div {
+    float: right;
+    line-height: 2;
+    text-align: left;
+  }*/
+  a {
+    color: #024e76;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  section {
+    padding: 60px;
+  }
+  section {
+    padding:30px;
+  }
+  /* Hero style start */
+  .hero {
+    background-image: url("style.jpeg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+  }
+  /* Hero Style End */
+  .hero-form {
+background-color:#fce138;
+padding: 20px;
+width: 500px;
+color:  #024e76;
+  }
+  .hero-form{
+    border: solid 3px #024e76;
+  }
