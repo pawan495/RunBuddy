@@ -10,7 +10,6 @@
                  } </style>
 </head>
 <body>
-    
     <!-- navigation -->
     <header>
     <h1 style="color: rgb(209, 240, 34); font-size:100px;">RUN BUDDY</h1>
@@ -42,18 +41,19 @@
             <p>Fill out this form and one of Our trainers will schedule a consult</p>
             <!-- Add form element-->
             <form>
-                <label for="name">Enter full name:</label>
-                <input type="text" placeholder="Your Name" name="name" id="name" />
-                <label for="email">Enter email address:</label>
-                <input type="email" placeholder="Email Address" name="email" id="email"/>
-                <label for="phone">Enter a telephone number:</label>
-                <input type="tel" placeholder="Phone Number" name="phone" id="phone"/>
+                <div><label for="name">Enter full name:</label>
+                <input type="text" placeholder="Your Name" name="name" id="name" /></div>
+                <div><label for="email">Enter email address:</label>
+                <input type="email" placeholder="Email Address" name="email" id="email"/></div>
+                <div><label for="phone">Enter a telephone number:</label>
+                <input type="tel" placeholder="Phone Number" name="phone" id="phone"/></div>
                 <p>
                     Have you worked out with a trainer before?
-                    <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                   <div> <input type="radio" name="trainer-confirm" id="trainer-yes" />
                     <label for="trainer-yes">Yes</label>
                     <input type="radio" name="trainer-confirm" id="trainer-no" />
                     <label for="trainer-no">No</label>
+                    </div>
                   </p>
                   <p>
                     <label for="checkbox" >
@@ -72,7 +72,7 @@
     <!-- hero/jumbotron-->
     <section>
     </section>
-    <!-- "what we do" section-->
+    <!-- "what we do" section -->
     <section>
         <h2>What We Do</h2>
     </section>
