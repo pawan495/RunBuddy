@@ -145,7 +145,7 @@ header nav {
     padding: 0px 15px;
     font-size:15-px;
   }
-  footerh2 {
+  footer h2 {
     color: #a03b3b;
     font-size: 30px;
     margin: 2;
@@ -291,4 +291,30 @@ color:  #024e76;
 
 .text-right {
   text-align: right;
+}
+section{width: 900px;
+margin: 0 auto 30px auto;
+background: #024e76;
+color: #fce138;
+overflow: auto;
+}
+.section-title {
+  font-size: 55px;
+  display: inline-block;
+  padding: 0 100px 20px 100px;
+  border-bottom: 3px solid;
+  margin-bottom: 35px;
+  color: #024e76;
+}
+/* REACH OUT STYLES START */
+.contact {
+  text-align: center;
+  background: #024e76;
+}
+.contact h2{
+  color:#fce138;
+}
+.contact-info iframe {
+  width: 400px;
+  height: 400px;
 }
