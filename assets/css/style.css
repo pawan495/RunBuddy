@@ -1,14 +1,23 @@
-
+ /* more on this crazy alphanumerical value in a minute! */
 body{
     color: #0b272b;
      font-family: "Lucida Console", "Courier New", monospace;
 } 
- header h1{
-    font-weight: bold;
-    font-size: 36px;
-    color: #f8d404;
-    margin: 0;
-} 
+header a{
+  text-decoration: none;
+    color: #fce138;
+}
+ /* apply styles to <header> */
+header {
+  padding: 20px 35px;
+  background-color: #39a6b2;
+}
+
+header nav {
+  float: right;
+  margin: 7px 0;
+}
+
 header nav {
   float: right;
   margin: 0 30px;
@@ -29,7 +38,6 @@ header h1 {
   font-size: 36px;
   color:#fce138;
   margin: 0;
-  display: inline;
 }
 /*.intro h2 {
   font-size: 55px;
@@ -44,21 +52,13 @@ header h1 {
   color: #39a6b2;
   width: 80%;
   font-size: 20px;
-  /* add this alongside your other declarations */
   margin: 0 auto;
 }
 .steps {
   text-align: center;
   background: #fce138;
 }
-/*.steps h2 {
-  font-size: 55px;
-  color: #024e76;
-  margin-bottom: 35px;
-  padding :0 100px 20px 100px;
-  border-bottom: 3px solid;
-  border-color: #39a6b2;
-}*/
+
 .section-title {
   font-size: 55px;
   color: #024e76;
@@ -105,55 +105,23 @@ header h1 {
   padding: 0;
   box-sizing: border-box;
 }
-header a{
-  text-decoration: none;
-    color: #053b53;
-}
- /* apply styles to <header> */
-header {
-  padding: 20px 35px;
-  background-color: #39a6b2;
-}
-header {
-  padding: 20px;
-}
 
-/* Applies 20px to the top and bottom, then 35px to the left and right */
-header {
-  padding: 20px 35px;
-}
-
-/* Applies 10px to the top, 15px to the right, 20px to the bottom, 25px to the left (in that specific clockwise order) */
-header {
-  padding: 10px 15px 20px 25px;
-}
-
-/* Explicitly list the side it should be applied to*/
-header {
-  padding-top: 10px;
-  padding-right: 15px;
-  padding-bottom: 20px;
-  padding-left: 25px;
-}
-header nav {
-  float: right;
-  margin: 7px 0;
-}
   footer{
     background: #fce138;
     width: 100%;
-    padding: 0px 15px;
-    font-size:15-px;
+    padding: 40px 35px;
+    font-size:30px;
   }
   footer h2 {
     color: #a03b3b;
     font-size: 30px;
-    margin: 2;
+    margin: 0;
+    display:inline;
   }
  footer div {
     float: right;
     line-height: 1.5;
-    text-align: left;
+    text-align: right;
   }
  footer a {
     color: #024e76;
@@ -171,10 +139,11 @@ header nav {
   }
   /* Hero style start */
   .hero {
-    background-image: url("style.jpeg");
+    background-image: url("style12.jpeg");
     height: 600px;
     background-size: cover;
     background-position: center;
+    position: relative;
   }
   /* Hero Style End */
   .hero-form {
@@ -186,16 +155,7 @@ color:  #024e76;
   .hero-form{
     border: solid 3px #024e76;
   }
-  .hero-form {
-    border: 3px solid #024e76;
-    background-color: #fce138;
-    padding: 20px;
-    width: 500px;
-    color: #024e76;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-  }
+ 
   .hero-form {
     border: 3px solid #024e76;
     background-color: #fce138;
@@ -207,15 +167,6 @@ color:  #024e76;
     right: 140px;
   }
   
-  /* Hero Style Start*/
-  /*.hero { 
-    background-image: url("style.jpeg");
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  /*Hero Style End*/
   .hero-form h3 {
     font-size: 24px;
     margin: 0;
@@ -244,7 +195,6 @@ color:  #024e76;
     padding: 10px 20px;
     font-size: 16px;
   }
-  /* HERO STYLES END */
   
 .trainers {
   text-align: center;
@@ -292,12 +242,13 @@ color:  #024e76;
 .text-right {
   text-align: right;
 }
-section{width: 900px;
+/*section{
+  width: 900px;
 margin: 0 auto 30px auto;
 background: #024e76;
 color: #fce138;
 overflow: auto;
-}
+}*/
 .section-title {
   font-size: 55px;
   display: inline-block;
@@ -318,3 +269,29 @@ overflow: auto;
   width: 400px;
   height: 400px;
 }
+.contact-info h3 {
+  color: #fce138;
+  font-size: 32px;
+}
+
+.contact-info div {
+  width: 410px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin: 30px 0 0 60px;
+  color: white;
+}
+.contact-info p, 
+.contact-info address {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.contact-info a {
+  color: #fce138;
+}
+
+/* REACH OUT STYLES END */
