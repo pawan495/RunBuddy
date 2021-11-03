@@ -139,11 +139,10 @@ header h1 {
   }
   /* Hero style start */
   .hero {
-    background-image: url("style12.jpeg");
+    background-image: url("style.jpeg");
     height: 600px;
     background-size: cover;
     background-position: center;
-    position: relative;
   }
   /* Hero Style End */
   .hero-form {
@@ -258,7 +257,7 @@ overflow: auto;
   color: #024e76;
 }
 /* REACH OUT STYLES START */
-.contact {
+/*.contact {
   text-align: center;
   background: #024e76;
 }
@@ -283,6 +282,48 @@ overflow: auto;
   color: white;
 }
 .contact-info p, 
+.contact-info address {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.contact-info a {
+  color: #fce138;
+}
+
+/* REACH OUT STYLES END */
+/* REACH OUT STYLES START */
+.contact {
+  text-align: center;
+  background: #024e76;
+}
+
+.contact h2 {
+  color: #fce138;
+}
+
+.contact-info iframe {
+  width: 400px;
+  height: 400px;
+}
+
+.contact-info div {
+  width: 410px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin: 30px 0 0 60px;
+  color: white;
+}
+
+.contact-info h3 {
+  color: #fce138;
+  font-size: 32px;
+}
+
+.contact-info p,
 .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
