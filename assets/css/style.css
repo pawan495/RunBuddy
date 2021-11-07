@@ -38,6 +38,8 @@ header h1 {
   font-size: 36px;
   color:#fce138;
   margin: 0;
+  display:inline;
+  font-weight: bolder;
 }
 /*.intro h2 {
   font-size: 55px;
@@ -109,7 +111,7 @@ header h1 {
   footer{
     background: #fce138;
     width: 100%;
-    padding: 40px 35px;
+    padding: 70px 35px;
     font-size:30px;
   }
   footer h2 {
@@ -336,3 +338,4 @@ overflow: auto;
 }
 
 /* REACH OUT STYLES END */
+
