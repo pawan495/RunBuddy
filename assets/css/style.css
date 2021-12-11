@@ -56,6 +56,15 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   display: flex;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-image: url("style.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed ;
+  background-position: 80%;
+
 }
 
 header nav {
@@ -75,12 +84,16 @@ list-style: none;
   padding: 10px 30px;
   font-weight: lighter;
   font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 header h1 {
   font-weight: bold;                            
   font-size: 36px;
   color:#fce138;
   margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 
 .steps {
@@ -96,6 +109,10 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.step:nth-child(even) {
+  border-bottom: 1px solid #39a6b2;
 }
 
 .section-title {
@@ -197,11 +214,13 @@ margin-right: 20px;
   .hero {
     background-image: url("style.jpeg");
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-position: center;
     align-items: flex-start;
+    background-attachment: fixed ;
+    background-position: 80%;
   }
 
   .hero-cta {
@@ -213,19 +232,23 @@ margin-right: 20px;
     line-height: 1.2;
   }
   .hero-cta h2 {
-    font-style: italic;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ font-style: italic;
     font-size: 55px;
     color: #fce138;
   }
   /* Hero Style End */
  
   .hero-form {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: 3px solid #024e76;
     background-color: #fce138;
     padding: 20px;
     color: #024e76;
     width: 40%;
     margin: 3.5%;
+    border-radius: 15px;
+
   }
   
   .hero-form h3 {
@@ -246,7 +269,16 @@ margin-right: 20px;
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+
   }
+  .form-input:focus {
+    background-color: rgba(255,255,255, 1);
+  outline: none;
+  }
+
+
   .hero-form label {
     margin: 0  5px;
   }
@@ -256,6 +288,8 @@ margin-right: 20px;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 10px;
+
   }
   
   .trainers {
@@ -364,7 +398,7 @@ overflow: auto;
   font-style: normal;
 }
 
-.comntact-form input, 
+.contact-form input, 
 .content-form textarea {
   border: 1px solid #024e76;
   display: block;
@@ -374,6 +408,7 @@ overflow: auto;
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+  border-radius: 10px;
 
 }
 
@@ -385,6 +420,8 @@ overflow: auto;
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 10px;
+
 }
 
 .contact-info a {
@@ -402,6 +439,7 @@ overflow: auto;
   header {
 padding-bottom: 0;
 justify-content: center;
+position: relative;
 }
 
 
@@ -514,4 +552,40 @@ footer h2, footer div {
 }
 .hero-cta {
   text-align:center;
+}
+.some-class {
+  text-shadow: 5px 10px 15px black;
+  box-shadow: 5px 10px 15px rgba (0,0,0,0.25) ;
+}
+
+button {
+  background: white;
+}
+
+button:hover {
+  background: red;
+}
+
+button:focus {
+  background: green;
+}
+
+button:active {
+  background: blue;
+}
+
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
 }
