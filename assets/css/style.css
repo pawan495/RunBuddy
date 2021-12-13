@@ -62,22 +62,16 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   display: flex;
-<<<<<<< HEAD
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   background-image: url("style.jpeg");
   background-size: cover;
-  background-position: center;
   background-attachment: fixed ;
   background-position: 80%;
-=======
   z-index: 9999;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  background-image: url("style.jpeg");  
->>>>>>> feature/aesthetics
+  
+
 
 }
 
@@ -95,11 +89,10 @@ list-style: none;
 
 
  header nav ul li a {
-  padding: 10px 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-size: 1.55vw;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 }
 header h1 {
@@ -108,9 +101,6 @@ header h1 {
   color:#fce138;
   margin: 0;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-<<<<<<< HEAD
-=======
 }
 
 header nav ul li a:hover {
@@ -118,7 +108,6 @@ header nav ul li a:hover {
   color: var(--secondary-color);
   border-radius: 15px;
   text-shadow: none;
->>>>>>> feature/aesthetics
 }
 
 .steps {
@@ -127,17 +116,16 @@ header nav ul li a:hover {
 
 .step {
   justify-content: space-between;
-  margin: 50px auto;
-  width:80%;
+  margin: 25px auto;
+  width:50%;
   padding-bottom: 50px;
-  border-bottom: 1px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: right;
 }
 
-.step:nth-child(even) {
-  border-bottom: 1px solid #39a6b2;
+.step:last-child  {
+  border-bottom: none;
 }
 
 .section-title {
@@ -183,11 +171,12 @@ section  {
 
 .step-img {
   flex:1 12%;
-margin-right: 20px;
+margin-right: 2px;
+max-width: 50%;
 }
 
 .step-img img {
-  max-width: 100%;
+  max-width: 40%;
 }
 
 .primary-border {
@@ -224,7 +213,7 @@ margin-right: 20px;
   
   
   footer h2 {
-    color: #a03b3b;
+    color: #024e76;
     font-size: 30px;
     margin: 0;
     
@@ -245,18 +234,12 @@ margin-right: 20px;
   .hero {
     background-image: url("style.jpeg");
     background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
-<<<<<<< HEAD
     background-attachment: fixed ;
     background-position: 80%;
-=======
-    background-attachment: fixed;
-
->>>>>>> feature/aesthetics
   }
 
   .hero-cta {
@@ -268,7 +251,6 @@ margin-right: 20px;
     line-height: 1.2;
   }
   .hero-cta h2 {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
  font-style: italic;
     font-size: 55px;
     color: #fce138;
@@ -283,11 +265,14 @@ margin-right: 20px;
     background-color: #fce138;
     padding: 20px;
     color: #024e76;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 40%;
     margin: 3.5%;
     border-radius: 15px;
 
+  }
+
+  .hero-form button:hover {
+    background-color: #39a6b2;  
   }
   
   .hero-form h3 {
@@ -306,21 +291,17 @@ margin-right: 20px;
     font-size: 16px;
     color: #024e76;
     width: 100%;
-    border-radius: 10px;
   background-color: rgba(255,255,255, 0.75);
     margin-bottom: 15px;
     border-radius: 10px;
-    background-color: rgba(255,255,255, 0.75);
 
   }
-<<<<<<< HEAD
+
   .form-input:focus {
     background-color: rgba(255,255,255, 1);
   outline: none;
   }
 
-=======
->>>>>>> feature/aesthetics
 
   .hero-form label {
     margin: 0  5px;
@@ -338,8 +319,6 @@ margin-right: 20px;
     padding: 10px 20px;
     border-radius:10px;
     font-size: 16px;
-    border-radius: 10px;
-
   }
   
   .trainers {
@@ -388,13 +367,6 @@ margin-right: 20px;
 .text-right {
   text-align: right;
 }
-/*section{
-  width: 900px;
-margin: 0 auto 30px auto;
-background: #024e76;
-color: #fce138;
-overflow: auto;
-}*/
 .section-title {
   font-size: 48px;
   border-bottom: 3px solid;
@@ -466,6 +438,8 @@ overflow: auto;
   margin-bottom: 15px;
   margin-top: 5px;
   border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
+
 
 }
 
@@ -491,8 +465,8 @@ overflow: auto;
   color: #fce138;
 }
 .contact-form button:hover {
-  color: var(--primary-color);
-  background: var(--tertiary-color);
+  color: #fce138;
+  background: #39a6b2;
 }
 
 /* REACH OUT STYLES END */
@@ -635,7 +609,13 @@ footer h2, footer div {
   top: -4px;
   left: -30px;
 }
-<<<<<<< HEAD
+.checkbox-wrapper label, .radio-wrapper label {
+  position: relative;
+  left: 10px;
+  margin: 10px;
+  line-height: 1.6;
+}
+
 .some-class {
   text-shadow: 5px 10px 15px black;
   box-shadow: 5px 10px 15px rgba (0,0,0,0.25) ;
@@ -664,29 +644,14 @@ header nav ul li a:hover {
   text-shadow: none;
 }
 
-.hero-form button:hover {
-  background-color: #39a6b2;  
-}
 
 .contact-form button:hover {
   color: #fce138;
   background: #39a6b2;
-=======
+
 
 .radio-wrapper label::before {
   border-radius: 50%;
-}
-
-.radio-wrapper label::after {
-  content: "";
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background: var(--secondary-color);
-  position: absolute;
-  left: -29px;
-  top: -3px;
-  background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
 }
 
 
@@ -729,5 +694,4 @@ div {
   --favorite-color: blue;
   color: var(--favorite-color);
   box-shadow: 5px 5px 10px var(--favorite-color);
->>>>>>> feature/aesthetics
 }
