@@ -9,7 +9,7 @@ A website that offers fitness training services.
 * CSS
 
 ## Website
-https://github.com/pawan495/RunBuddy.git
+https://pawan495.github.io/RunBuddy/
 
 ## Contribution
 
